@@ -1,4 +1,4 @@
-### **Welcome to my QA Automation Portfolio!**
+### Welcome to my QA Automation Portfolio!
 
 This repository showcases my practical experience with automated and manual testing tools, frameworks, and QA best practices.
 ---
