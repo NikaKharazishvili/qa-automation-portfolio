@@ -1,0 +1,14 @@
+demo\pages\TablesPage.class
+demo\pages\WindowOperationsPage.class
+demo\pages\CalendarsPage.class
+demo\pages\BasePage.class
+demo\core\ConfigReader.class
+demo\pages\HoverPage.class
+demo\core\DriverManager.class
+demo\pages\DelaysPage.class
+demo\pages\PopupsPage.class
+demo\pages\GesturesPage.class
+demo\pages\SliderPage.class
+demo\pages\AdsPage.class
+demo\pages\ModalsPage.class
+demo\pages\FormFieldsPage.class
