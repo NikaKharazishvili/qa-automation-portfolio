@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="15" passed="15" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-06-08T14:27:14 GET" name="ReqresAPI Suite" finished-at="2025-06-08T14:27:22 GET" duration-ms="7624">
+    <groups>
+    </groups>
+    <test started-at="2025-06-08T14:27:14 GET" name="User Tests" finished-at="2025-06-08T14:27:22 GET" duration-ms="7624">
+      <class name="reqres.tests.ResourceTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:reqres.tests.ResourceTest@5241cf67]" started-at="2025-06-08T14:27:16 GET" name="setUp" finished-at="2025-06-08T14:27:16 GET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testGetResourceById()[pri:0, instance:reqres.tests.ResourceTest@5241cf67]" started-at="2025-06-08T14:27:16 GET" name="testGetResourceById" description="Verify that getting single resource with ID=2 returns status 200 and correct ID" finished-at="2025-06-08T14:27:16 GET" duration-ms="201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetResourceById -->
+        <test-method signature="testGetResourceNotFound()[pri:0, instance:reqres.tests.ResourceTest@5241cf67]" started-at="2025-06-08T14:27:16 GET" name="testGetResourceNotFound" description="Verify that getting resource with non-existent ID returns 404" finished-at="2025-06-08T14:27:17 GET" duration-ms="293" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetResourceNotFound -->
+        <test-method signature="testGetResourcesList()[pri:0, instance:reqres.tests.ResourceTest@5241cf67]" started-at="2025-06-08T14:27:17 GET" name="testGetResourcesList" description="Verify that getting list of resources returns status code 200 and non-empty data" finished-at="2025-06-08T14:27:17 GET" duration-ms="167" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetResourcesList -->
+      </class> <!-- reqres.tests.ResourceTest -->
+      <class name="reqres.tests.LoginTest">
+        <test-method signature="testBadLogin()[pri:0, instance:reqres.tests.LoginTest@625e134e]" started-at="2025-06-08T14:27:19 GET" name="testBadLogin" description="Login without password should return status 400 and an error message" finished-at="2025-06-08T14:27:19 GET" duration-ms="298" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBadLogin -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:reqres.tests.LoginTest@625e134e]" started-at="2025-06-08T14:27:19 GET" name="setUp" finished-at="2025-06-08T14:27:19 GET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLogin()[pri:0, instance:reqres.tests.LoginTest@625e134e]" started-at="2025-06-08T14:27:19 GET" name="testLogin" description="Successful login should return status 200 and a token" finished-at="2025-06-08T14:27:19 GET" duration-ms="265" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+      </class> <!-- reqres.tests.LoginTest -->
+      <class name="reqres.tests.RegisterTest">
+        <test-method signature="testRegisterAccountSuccessfully()[pri:0, instance:reqres.tests.RegisterTest@7e809b79]" started-at="2025-06-08T14:27:18 GET" name="testRegisterAccountSuccessfully" description="Successful registration should return 200 and include user ID and token" finished-at="2025-06-08T14:27:19 GET" duration-ms="290" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegisterAccountSuccessfully -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:reqres.tests.RegisterTest@7e809b79]" started-at="2025-06-08T14:27:18 GET" name="setUp" finished-at="2025-06-08T14:27:18 GET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testRegisterAccountWithoutPassword()[pri:0, instance:reqres.tests.RegisterTest@7e809b79]" started-at="2025-06-08T14:27:19 GET" name="testRegisterAccountWithoutPassword" description="Registration without password should return 400 and error message" finished-at="2025-06-08T14:27:19 GET" duration-ms="268" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegisterAccountWithoutPassword -->
+      </class> <!-- reqres.tests.RegisterTest -->
+      <class name="reqres.tests.DelayedTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:reqres.tests.DelayedTest@89c10b7]" started-at="2025-06-08T14:27:19 GET" name="setUp" finished-at="2025-06-08T14:27:19 GET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testDelay()[pri:0, instance:reqres.tests.DelayedTest@89c10b7]" started-at="2025-06-08T14:27:19 GET" name="testDelay" description="Verify that delayed user data returns status 200 and contains expected fields" finished-at="2025-06-08T14:27:22 GET" duration-ms="2419" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDelay -->
+      </class> <!-- reqres.tests.DelayedTest -->
+      <class name="reqres.tests.UserTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:reqres.tests.UserTest@52b56a3e]" started-at="2025-06-08T14:27:14 GET" name="setUp" finished-at="2025-06-08T14:27:14 GET" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testGetUserById()[pri:0, instance:reqres.tests.UserTest@52b56a3e]" started-at="2025-06-08T14:27:14 GET" name="testGetUserById" description="Verify that getting user with ID = 2 returns correct user and status code 200" finished-at="2025-06-08T14:27:16 GET" duration-ms="1356" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetUserById -->
+        <test-method signature="testListUsersPage()[pri:0, instance:reqres.tests.UserTest@52b56a3e]" started-at="2025-06-08T14:27:16 GET" name="testListUsersPage" description="Verify that page=2 returns status code 200 and contains a list of users" finished-at="2025-06-08T14:27:16 GET" duration-ms="229" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testListUsersPage -->
+        <test-method signature="testUserNotFound()[pri:0, instance:reqres.tests.UserTest@52b56a3e]" started-at="2025-06-08T14:27:16 GET" name="testUserNotFound" description="Verify that getting user with non-existent ID returns 404" finished-at="2025-06-08T14:27:16 GET" duration-ms="348" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUserNotFound -->
+      </class> <!-- reqres.tests.UserTest -->
+      <class name="reqres.tests.UserCrudTest">
+        <test-method signature="deleteUserById()[pri:0, instance:reqres.tests.UserCrudTest@77192705]" started-at="2025-06-08T14:27:17 GET" name="deleteUserById" description="Verify that deleting a user returns status 204 with no content" finished-at="2025-06-08T14:27:17 GET" duration-ms="310" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteUserById -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:reqres.tests.UserCrudTest@77192705]" started-at="2025-06-08T14:27:17 GET" name="setUp" finished-at="2025-06-08T14:27:17 GET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCreateUser()[pri:0, instance:reqres.tests.UserCrudTest@77192705]" started-at="2025-06-08T14:27:17 GET" name="testCreateUser" description="Verify that creating a user returns status 201 and includes name, job, id, and createdAt fields" finished-at="2025-06-08T14:27:18 GET" duration-ms="521" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateUser -->
+        <test-method signature="testPartialUpdateUser()[pri:0, instance:reqres.tests.UserCrudTest@77192705]" started-at="2025-06-08T14:27:18 GET" name="testPartialUpdateUser" description="Verify that partial update using PATCH returns status 200 and updated name/job fields" finished-at="2025-06-08T14:27:18 GET" duration-ms="301" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPartialUpdateUser -->
+        <test-method signature="testUpdateUser()[pri:0, instance:reqres.tests.UserCrudTest@77192705]" started-at="2025-06-08T14:27:18 GET" name="testUpdateUser" description="Verify that full update using PUT returns status 200 and updated name/job fields" finished-at="2025-06-08T14:27:18 GET" duration-ms="309" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateUser -->
+      </class> <!-- reqres.tests.UserCrudTest -->
+    </test> <!-- User Tests -->
+  </suite> <!-- ReqresAPI Suite -->
+</testng-results>

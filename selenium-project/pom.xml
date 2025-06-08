@@ -28,7 +28,7 @@
         <scope>test</scope>
     </dependency>
 
-     <!-- Optional: Fix SLF4J no-provider warning -->
+    <!-- Optional: Fix SLF4J no-provider warning -->
     <dependency>
         <groupId>org.slf4j</groupId>
         <artifactId>slf4j-simple</artifactId>

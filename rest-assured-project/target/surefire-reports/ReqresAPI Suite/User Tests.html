@@ -1,0 +1,155 @@
+<html>
+<head>
+<title>TestNG:  User Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>User Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>15/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Jun 08 14:27:14 GET 2025</td>
+</tr>
+<tr><td>Total time:</td><td>7 seconds (7624 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='reqres.tests.LoginTest.testLogin()'><b>testLogin</b><br>Test class: reqres.tests.LoginTest<br>Test method: Successful login should return status 200 and a token</td>
+<td></td>
+<td>0</td>
+<td>reqres.tests.LoginTest@625e134e</td></tr>
+<tr>
+<td title='reqres.tests.UserTest.testGetUserById()'><b>testGetUserById</b><br>Test class: reqres.tests.UserTest<br>Test method: Verify that getting user with ID = 2 returns correct user and status code 200</td>
+<td></td>
+<td>1</td>
+<td>reqres.tests.UserTest@52b56a3e</td></tr>
+<tr>
+<td title='reqres.tests.UserCrudTest.testUpdateUser()'><b>testUpdateUser</b><br>Test class: reqres.tests.UserCrudTest<br>Test method: Verify that full update using PUT returns status 200 and updated name/job fields</td>
+<td></td>
+<td>0</td>
+<td>reqres.tests.UserCrudTest@77192705</td></tr>
+<tr>
+<td title='reqres.tests.LoginTest.testBadLogin()'><b>testBadLogin</b><br>Test class: reqres.tests.LoginTest<br>Test method: Login without password should return status 400 and an error message</td>
+<td></td>
+<td>0</td>
+<td>reqres.tests.LoginTest@625e134e</td></tr>
+<tr>
+<td title='reqres.tests.RegisterTest.testRegisterAccountWithoutPassword()'><b>testRegisterAccountWithoutPassword</b><br>Test class: reqres.tests.RegisterTest<br>Test method: Registration without password should return 400 and error message</td>
+<td></td>
+<td>0</td>
+<td>reqres.tests.RegisterTest@7e809b79</td></tr>
+<tr>
+<td title='reqres.tests.UserCrudTest.testCreateUser()'><b>testCreateUser</b><br>Test class: reqres.tests.UserCrudTest<br>Test method: Verify that creating a user returns status 201 and includes name, job, id, and createdAt fields</td>
+<td></td>
+<td>0</td>
+<td>reqres.tests.UserCrudTest@77192705</td></tr>
+<tr>
+<td title='reqres.tests.ResourceTest.testGetResourceNotFound()'><b>testGetResourceNotFound</b><br>Test class: reqres.tests.ResourceTest<br>Test method: Verify that getting resource with non-existent ID returns 404</td>
+<td></td>
+<td>0</td>
+<td>reqres.tests.ResourceTest@5241cf67</td></tr>
+<tr>
+<td title='reqres.tests.ResourceTest.testGetResourceById()'><b>testGetResourceById</b><br>Test class: reqres.tests.ResourceTest<br>Test method: Verify that getting single resource with ID=2 returns status 200 and correct ID</td>
+<td></td>
+<td>0</td>
+<td>reqres.tests.ResourceTest@5241cf67</td></tr>
+<tr>
+<td title='reqres.tests.RegisterTest.testRegisterAccountSuccessfully()'><b>testRegisterAccountSuccessfully</b><br>Test class: reqres.tests.RegisterTest<br>Test method: Successful registration should return 200 and include user ID and token</td>
+<td></td>
+<td>0</td>
+<td>reqres.tests.RegisterTest@7e809b79</td></tr>
+<tr>
+<td title='reqres.tests.ResourceTest.testGetResourcesList()'><b>testGetResourcesList</b><br>Test class: reqres.tests.ResourceTest<br>Test method: Verify that getting list of resources returns status code 200 and non-empty data</td>
+<td></td>
+<td>0</td>
+<td>reqres.tests.ResourceTest@5241cf67</td></tr>
+<tr>
+<td title='reqres.tests.UserTest.testListUsersPage()'><b>testListUsersPage</b><br>Test class: reqres.tests.UserTest<br>Test method: Verify that page=2 returns status code 200 and contains a list of users</td>
+<td></td>
+<td>0</td>
+<td>reqres.tests.UserTest@52b56a3e</td></tr>
+<tr>
+<td title='reqres.tests.DelayedTest.testDelay()'><b>testDelay</b><br>Test class: reqres.tests.DelayedTest<br>Test method: Verify that delayed user data returns status 200 and contains expected fields</td>
+<td></td>
+<td>2</td>
+<td>reqres.tests.DelayedTest@89c10b7</td></tr>
+<tr>
+<td title='reqres.tests.UserTest.testUserNotFound()'><b>testUserNotFound</b><br>Test class: reqres.tests.UserTest<br>Test method: Verify that getting user with non-existent ID returns 404</td>
+<td></td>
+<td>0</td>
+<td>reqres.tests.UserTest@52b56a3e</td></tr>
+<tr>
+<td title='reqres.tests.UserCrudTest.deleteUserById()'><b>deleteUserById</b><br>Test class: reqres.tests.UserCrudTest<br>Test method: Verify that deleting a user returns status 204 with no content</td>
+<td></td>
+<td>0</td>
+<td>reqres.tests.UserCrudTest@77192705</td></tr>
+<tr>
+<td title='reqres.tests.UserCrudTest.testPartialUpdateUser()'><b>testPartialUpdateUser</b><br>Test class: reqres.tests.UserCrudTest<br>Test method: Verify that partial update using PATCH returns status 200 and updated name/job fields</td>
+<td></td>
+<td>0</td>
+<td>reqres.tests.UserCrudTest@77192705</td></tr>
+</table><p>
+</body>
+</html>

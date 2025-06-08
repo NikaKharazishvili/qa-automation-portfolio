@@ -1,0 +1,7 @@
+reqres\tests\RegisterTest.class
+reqres\tests\UserTest.class
+reqres\tests\DelayedTest.class
+reqres\tests\UserCrudTest.class
+reqres\tests\BaseTest.class
+reqres\tests\LoginTest.class
+reqres\tests\ResourceTest.class

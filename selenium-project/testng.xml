@@ -3,7 +3,7 @@
   <test name="Core Functional Tests">
     <classes>
       <class name="tests.BaseTest" />
-      <!-- <class name="tests.DelaysTest"/> -->
+      <class name="tests.DelaysTest"/>
       <class name="tests.FormFieldsTest"/>
       <class name="tests.PopupsTest"/>
       <class name="tests.SliderTest"/>

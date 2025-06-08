@@ -1,0 +1,8 @@
+reqres\clients\RegisterClient.class
+reqres\clients\DelayedClient.class
+reqres\clients\ResourceClient.class
+reqres\clients\UserCrudClient.class
+reqres\clients\BaseClient.class
+reqres\clients\LoginClient.class
+reqres\clients\UserClient.class
+reqres\config\ApiConfig.class
